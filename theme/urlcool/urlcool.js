@@ -6,7 +6,7 @@ let res
     }
 
     document.getElementById("searchbtn").disabled=true;
-	document.getElementById("searchbtn").innerHTML='<span role="status" aria-hidden="true"></span>Please wait...';
+	document.getElementById("searchbtn").innerHTML='Please wait...';
     fetch(window.location.pathname, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
