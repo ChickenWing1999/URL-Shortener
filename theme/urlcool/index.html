@@ -122,19 +122,24 @@ margin-left:65px;
 border-width: 0;
 margin-top:5px;
     }
-    .btn-cus{position: absolute;
-        width: 177px;
+    .btn-cus {
+position: relative;
+width: 177px;
 height: 70px;
 background: #644DEF;
 box-shadow: 0px 2px 10px 0px #0E0061;
 border-width: 0;
 border-radius: 40px;
 color: #FFFFFF;
+transition: all 0.2s
 font-size: 28px;
 font-family: MyriadPro-Semibold, MyriadPro;
 font-weight: 600;
 line-height: 34px;
 right: 65px;
+    }
+    .btn-cus:active {
+      background: #5c4ead;
     }
     .card-text {
         position: absolute;
@@ -183,10 +188,10 @@ right: 65px;
         
       <h5 class="bigtitle">Shorten your URLs!</h5>
       
-      <h5 class="card-title">Please enter the long URL to be shortened :</h5>
+      <h5 class="card-title">Please enter the long URL you want to shorten:</h5>
       <div class="formm">
         <input type="text" class="form-control" placeholder="Example: https://example.com/" id="text">
-        <button class="btn-cus" type="button" onclick='shorturl()' id="searchbtn">Shorten it</button>
+        <button class="btn-cus btn-cus--loading" type="button" onclick='shorturl()' id="searchbtn">Shorten it</button>
       </div>    
       <div class="card-text">
         Powered by <a href="https://www.highwaycpmrevenue.com/bxzsxffdj?key=5b1272b64c309b6ec48b9bec59117e61">LinkFly</a>
