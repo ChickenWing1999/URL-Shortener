@@ -5,8 +5,8 @@ let res
         return
     }
 
-    document.getElementById("searchbtn").disabled=true;
-	document.getElementById("searchbtn").innerHTML='Please wait...';
+    document.getElementById("searchbtn").disab
+	document.getElementById("searchbtn").innerHTML='<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>Please wait...';
     fetch(window.location.pathname, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
